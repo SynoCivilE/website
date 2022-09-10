@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SynOCE: The Civil Engineering Society of IIT Gandhinagar">
+    <title>SynOCE</title>
+    <link rel="shortcut icon" href="assets/images/favicon.png">
+    <link rel="stylesheet" href="assets/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <!--  ION ICONS  -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" defer></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" defer></script>
+</head>
+
+<body>
+
+
+
+    <!-- Header -->
+
+    <nav class="navbar" style="position: absolute;">
+        <div class="navbar-container container">
+            <input type="checkbox" name="" id="">
+            <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div>
+            <ul class="menu-items">
+                <li><a href="#" class="nav-link active-nav" style="color: rgb(255, 255, 255);">Home</a></li>
+                <li><a href="events.html" class="nav-link" style="color: rgb(255, 255, 255);">Events</a></li>
+                <li><a href="blogs.html" class="nav-link" style="color: rgb(255, 255, 255);">Blogs</a></li>
+                <li><a href="team.html" class="nav-link" style="color: rgb(255, 255, 255);">Team</a></li>
+                <li><a href="contact.html" class="nav-link" style="color: rgb(255, 255, 255);">Contact Us</a></li>
+            </ul>
+            <div class="nav-logo">
+                <a href="index.html"><img src="assets/images/logo.png" alt="logo" class="logo-image"></a>
+            </div>
+        </div>
+    </nav>
+
+    <header id="head">
+        <div class="banner-content">
+            <h1>SynOCE</h1>
+            <h2><span class="Capi-letter">Syn</span>dicate <span class="Capi-letter">O</span>f <span
+                    class="Capi-letter">C</span>ivil <span class="Capi-letter">E</span>ngineers</h2>
+            <h3>The Civil Engineering Society of IIT Gandhinagar</h3>
+        </div>
+    </header>
+    <!-- /Header -->
+
+    <div class="section">
+        <div class="container">
+            <div class="section-heading">
+                <h2>About Us</h2>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 about-content">
+                    <p>Syndicate of Civil Engineers (SynOCE) is the civil engineering society of IIT Gandhinagar. With its foundation being laid in January 2020, the society is the first of its kind student run society. Its primary aim is to provide guidance and resources to the students of civil engineering discipline and help them pursue the career of their choice with utmost justice to their capabilities. The society's goal is to build a strong community that promotes a healthy and progressive work culture and prepares students for the professional world.<br><br>
+                    The society hosts career guidance sessions, workshops on a variety of software, organizes events, and film screenings to provide support, and peer-to-peer networking opportunities. It also  collaborates  with various industries and launches semester-long projects to obtain industry experience and establish positive relations with them.
+                        </p>
+                </div>
+                <div class="col-md-6">
+                    <video width="100%" controls autoplay muted loop class="logo-video">
+                        <source src="assets/images/logo-video.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Image Slideshow -->
+    <div class="section">
+        <div class="row">
+            <div class="col-lg-12 col-md-6">
+                <section id="slideshow">
+                    <div id="contain-image">
+                        <img src="assets/images/slideshow-1.png" alt="Image" class="slideshow-img" id="img1">
+                        <img src="assets/images/slideshow-2.png" alt="Image" class="slideshow-img" id="img2">
+                        <img src="assets/images/slideshow-3.png" alt="Image" class="slideshow-img" id="img3">
+                        <img src="assets/images/slideshow-4.png" alt="Image" class="slideshow-img" id="img4">
+                        <div id="contain-button">
+                            <ion-icon name="radio-button-on" class="slideshow-button" id="button1"></ion-icon>
+                            <ion-icon name="radio-button-on" class="slideshow-button" id="button2"></ion-icon>
+                            <ion-icon name="radio-button-on" class="slideshow-button" id="button3"></ion-icon>
+                            <ion-icon name="radio-button-on" class="slideshow-button" id="button4"></ion-icon>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="section">
+        <div class="container">
+            
+            <div class="reach-card">
+                <div class="row">
+                    <div class="col-md-4 about-content">
+                        <p>Industrial Projects </p>
+                    </div>
+
+                    <div class="col-md-4 about-content">
+                        <p>SYNC WITH CE 1.0: The First Edition of the Annual Magazine</p>
+                    </div>
+                    <div class="col-md-4 about-content">
+                        <p>SYNC WITH CE 2.0: The Second Edition of the Annual Magazine</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="footer-nav">
+            <a href="index.html">Home</a> |
+            <a href="events.html">Events</a> |
+            <a href="blogs.html">Blogs</a> |
+            <a href="team.html">Team</a> |
+            <a href="contact.html">Contact Us</a>
+        </div>
+    </footer>
+
+
+
+    <script src="assets/js/main.js"></script>
+    <script>
+
+        // Slideshow
+        let n = 0;
+        function slide() {
+            const images = document.getElementsByClassName("slideshow-img");
+            const button = document.getElementsByClassName("slideshow-button");
+
+            for (let i = 0; i < images.length; i++) {
+                images[i].style = "display:none";
+            }
+            for (let i = 0; i < button.length; i++) {
+                button[i].className = button[i].className.replace(" slideshow-active", "");
+            }
+
+            n++;
+            if (n > images.length) {
+                n = 1;
+            }
+
+            images[n - 1].style = "display:block";
+            button[n - 1].className += " slideshow-active";
+
+            setTimeout(slide, 3000);
+        }
+
+        slide();
+    </script>
+</body>
+
+</html>
