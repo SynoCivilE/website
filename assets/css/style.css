@@ -27,7 +27,11 @@ a {
     text-decoration: none;
 }
 
-
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
 /* Navbar */
 .navbar input[type="checkbox"],
 .navbar .hamburger-lines{
@@ -446,7 +450,7 @@ a {
 	background-blend-mode: overlay;
 	color: white;
     text-align: center;
-    margin-top: 10rem;
+    margin-top: auto;
 	
 }
 
@@ -500,7 +504,7 @@ a {
     border: #222 1px solid;
     width: 30%;
     text-align: center;
-    margin: 1.6%;
+    margin: 1.5%;
     display: none; /* Hidden by default */
   }
   
