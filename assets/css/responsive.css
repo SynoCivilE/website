@@ -45,6 +45,11 @@
     .card-caption h5 {
         font-size: 12px;
     }
+    .filterDiv {
+        width: 40%;
+        margin: 5px 5%;
+
+      }
 
     
 }
