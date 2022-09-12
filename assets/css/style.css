@@ -179,9 +179,43 @@ body{
 .section{
     margin-bottom: 50px;
 }
-.reach-card{
-    margin: 5rem 0;
+
+
+
+
+
+.reach-card-container{
+    margin: 20px;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    position: relative;
+    justify-content: center;
+    
 }
+.reach-card{
+    padding: 10px;
+    width: 25%;
+    border: 1px solid rgb(205, 205, 205);
+    text-align: center;
+    margin: 20px;
+    box-shadow: 0rem 0.7rem 2rem rgba(0, 0, 0, 0.5);
+
+    
+}
+
+.reach-card img{
+    width: 100%;
+    padding: 0.1rem;
+
+}
+
+.reach-card p{
+    text-align: center;
+    color: var(--red);
+}
+
+
 
 
 
