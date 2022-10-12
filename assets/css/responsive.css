@@ -20,7 +20,7 @@
         font-size: 16px;
     }
     .logo-image{
-        width: 50px;
+        width: 150px;
     }
     .about-content p{
         font-size: 16px;
@@ -283,6 +283,10 @@
         font-size: 12px;
         padding: 5px;
       }
+      .thumbnail{
+        min-height: 450px;
+    
+    }
       .event-caption{
         padding: 10px;
     }
