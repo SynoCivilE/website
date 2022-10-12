@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=EB+Garamond:wght@800&family=Nanum+Myeongjo&family=Open+Sans:wght@800&family=Raleway:wght@600&family=Roboto&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+/* font-family: 'Montserrat', sans-serif; */
 /* 
 font-family: 'Cormorant Garamond', serif;
 font-family: 'EB Garamond', serif;
@@ -15,7 +17,7 @@ font-family: 'Ubuntu', sans-serif;
     font-family: "Open sans", Helvetica, Arial;
 }
 :root {
-    --red: #FF4242;
+    --theme-blue: #00AEEF;
 }
 p{
     font-size: 16px;
@@ -39,30 +41,34 @@ body{
 }
 
 .container{
-    max-width: 1200px;
+    /* max-width: 1200px; */
     width: 90%;
     margin: auto;
 }
 
 .navbar{
-    box-shadow: 0px 5px 10px 0px #aaa;
     width: 100%;
     z-index: 100;
     display: flex;
     justify-content: space-between;
-    padding: 1rem 1rem;
-    background: transparent;
-    position: relative;
+    /* padding: 5px 10px; */
+    /* background: transparent; */
+    background: rgb(230, 230, 230);
     top: 0;
     position: sticky;
+    align-items: center;
+    /* box-shadow: 5px 5px 15px #cfcfcf; */
+
+
+
 }
 
 
 .navbar-container{
     display: flex;
     justify-content: space-between;
-    height: 64px;
     align-items: center;
+    width: 100%;
 }
 
 .menu-items{
@@ -70,20 +76,15 @@ body{
     display: flex;
 }
 .logo-image{
-    width: 70px;
-	background-color: rgba(255, 255, 255, 0.4);
-	padding: 10px;
-	border-radius: 50%;
+    width: 160px;
 	align-items: center;
-    filter: drop-shadow(5px 5px 5px #222);
-}
-.nav-logo{
-    order: 1;
+    padding: 10px;
+    /* filter: drop-shadow(5px 5px 5px #222); */
 }
 
 .menu-items li{
     list-style: none;
-    margin-left: 1.5rem;
+    margin-left: 10px;
     font-size: 20px;
 }
 
@@ -92,21 +93,23 @@ body{
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease-in-out;
-    padding: 10px;
+    padding: 10px;  
+    display: inline-block;  
+
 }
 .active-nav{
-    background-color: var(--red);
+    background-color: var(--theme-blue);
 }
 .nav-link:hover{
     color: #ffffff;
-    background-color: var(--red);
+    background-color: var(--theme-blue);
 }
 
 
 
 
 .about-content p{
-    font-size: 20px;
+    font-size: 18px;
     font-family: 'Raleway', sans-serif;
     text-align: justify;
 
@@ -127,6 +130,7 @@ body{
 	background-position: center;
 	background-blend-mode: overlay;
 	color: white;
+    /* margin-top: 100px; */
   }
 
 .banner-content{
@@ -137,7 +141,7 @@ body{
 }
 
 .banner-content h1{
-    color: #FF3F3F;
+    color: var(--theme-blue);
 	font-size: 74px;
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
 	font-weight: 900;
@@ -157,20 +161,21 @@ body{
 
 .banner-content h3{
     color: #fff;
-    font-size: 26px;
+    font-size: 20px;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
     text-align: center;
-    font-family: 'Cormorant Garamond', serif;
+    font-family: "Open sans", Helvetica, Arial;
+    font-weight: 400;
 }
 .Capi-letter{
-	color: #FF3F3F;
+    color: var(--theme-blue);
 }
 
 .section-heading h2{
     font-size: 36px;
     margin-top: 20px;
 	font-weight: 800;
-	color:#FF4242;
+    color: var(--theme-blue);
     border-bottom: 1px solid rgb(201, 200, 200);
     margin-bottom: 20px;
 
@@ -188,9 +193,9 @@ body{
     margin: 20px;
     width: 100%;
     display: flex;
-    text-align: center;
+    text-align: left;
     position: relative;
-    justify-content: center;
+
     
 }
 .reach-card{
@@ -212,7 +217,7 @@ body{
 
 .reach-card p{
     text-align: center;
-    color: var(--red);
+    color: var(--theme-blue);
 }
 
 
@@ -267,6 +272,7 @@ body{
     margin-bottom: 20px;
     background-color: rgb(255, 255, 255);
     filter: drop-shadow(5px 5px 5px #222);
+    min-height: 550px;
 
 }
 .thumbnail img{
@@ -274,16 +280,17 @@ body{
 
 }
 .event-caption{
-    padding: 10px;
+    padding: 15px;
 }
 
 .event-caption h4{
     font-size: 18px;
     font-family: 'Raleway', sans-serif;
     margin-bottom: 10px;
+    text-align: center;
 }
 .event-caption h4:hover{
-    color: var(--red);
+    color: var(--theme-blue);
 }
 
 .event-caption p{
@@ -306,13 +313,15 @@ body{
 
 /* Our Team */
 .testinomial{
-	font-size: 20px;
+	font-size: 18px;
     font-family: 'Raleway', sans-serif;
 	font-style: italic;
 	margin: 30px 0 30px;
+    margin-top: 80px;
     padding: 10px;
     text-align: justify;
 	border-left: 4px solid rgba(0, 0, 0, 0.13);
+
 
 }
 
@@ -325,19 +334,19 @@ body{
 }
 .image-caption1{
 	font-size: 18px;
-	text-align: right;
+	text-align: center;
 
 }
 .image-caption2{
 	font-size: 14px;
-	text-align: right;
+	text-align: center;
 
 }
 .udit-card{
 	border-radius: 10px;
 	width: 100%;
 	border-radius: 0;
-	box-shadow: 5px 5px 15px #e74c3c;
+	box-shadow: 5px 5px 15px #c8c8c8;
 	transition: all 0.3s ease-in;
 	-webkit-transition: all 0.3s ease-in;
 	-moz-transition: all 0.3s ease-in;
@@ -348,7 +357,7 @@ body{
     width: 100%;
 }
 .udit-card:hover{
-	background: #e74c3c;
+	background:var(--theme-blue);
 	color: #fff;
 	border-radius: 5px;
 	border: none;
@@ -383,7 +392,7 @@ body{
 }
 #team .card {
 	border-radius: 0;
-	box-shadow: 5px 5px 15px #e74c3c;
+	box-shadow: 5px 5px 15px #c8c8c8;
 	transition: all 0.3s ease-in;
 	-webkit-transition: all 0.3s ease-in;
 	-moz-transition: all 0.3s ease-in;
@@ -391,7 +400,7 @@ body{
 }
 
 #team .card:hover {
-	background: #e74c3c;
+	background:var(--theme-blue);
 	color: #fff;
 	border-radius: 5px;
 	border: none;
@@ -426,7 +435,7 @@ body{
 .submit-btn{
     padding: 10px;
     font-size: 14px;
-    background-color: var(--red);
+    background-color: var(--theme-blue);
     color: #fff;
     border: none;
 }
@@ -502,7 +511,7 @@ body{
 
 }
 .footer-nav a:hover{
-	color: var(--red);
+	color: var(--theme-blue);
 }
 
 
@@ -564,7 +573,7 @@ body{
   
   /* Add a dark background to the active button */
   .blog-btn.active {
-    background-color: var(--red);
+    background-color: var(--theme-blue);
     color: white;
   }
 .blog-post{
@@ -590,7 +599,7 @@ body{
     color: black;
   }
   .blog-img-caption:hover{
-    color: var(--red);
+    color: var(--theme-blue);
   }
 
   .blog-side-image{
@@ -608,22 +617,22 @@ body{
 .blog-image-caption{
 	font-size: 18px;
 	font-style: italic;
-	text-align: right;
+	text-align: center;
 	background-color: rgb(211, 211, 211);
 	padding: 5px 10px;
 }
 .blog-item p {
-    font-size: 20px;
-    font-family: 'Nanum Myeongjo', serif;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
 
 
 }
 
 blockquote {
-    font-size: 20px;
+    font-size: 18px;
 	font-style: italic;
-    font-family: 'Nanum Myeongjo', serif;
-	color: #999;
+    font-family: 'Montserrat', sans-serif;
+	color: rgb(0, 0, 0);
 	margin: 30px 0 30px;
     padding: 10px;
     text-align: justify;
