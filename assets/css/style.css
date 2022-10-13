@@ -41,26 +41,24 @@ body{
 }
 
 .container{
-    /* max-width: 1200px; */
+    max-width: 1200px;
     width: 90%;
+    margin: auto;
+}
+.nav-container{
+    width: 100%;
     margin: auto;
 }
 
 .navbar{
+    /* box-shadow: 0px 5px 10px 0px #aaa; */
     width: 100%;
     z-index: 100;
     display: flex;
     justify-content: space-between;
-    /* padding: 5px 10px; */
-    /* background: transparent; */
     background: rgb(230, 230, 230);
     top: 0;
     position: sticky;
-    align-items: center;
-    /* box-shadow: 5px 5px 15px #cfcfcf; */
-
-
-
 }
 
 
@@ -68,30 +66,39 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
 }
 
 .menu-items{
     order: 2;
     display: flex;
 }
+
 .logo-image{
     width: 160px;
 	align-items: center;
     padding: 10px;
+    display: flex;
     /* filter: drop-shadow(5px 5px 5px #222); */
 }
 
+.nav-logo{
+    order: 1;
+}
+
+
 .menu-items li{
     list-style: none;
-    margin-left: 10px;
+
     font-size: 20px;
+    display: flex;
+    float: right;
 }
 
 .nav-link {
     color: rgb(0, 0, 0);
     text-decoration: none;
     font-weight: 500;
+    margin-right: 10px;
     transition: color 0.3s ease-in-out;
     padding: 10px;  
     display: inline-block;  
@@ -215,9 +222,14 @@ body{
 
 }
 
+.reach-card a{
+    color: black;
+}
 .reach-card p{
     text-align: center;
-    color: var(--theme-blue);
+}
+.reach-card a:hover{
+    color: var(--theme-blue)
 }
 
 
@@ -388,7 +400,7 @@ body{
 }
 
 #team{
-	margin: 40px 0px;
+	margin-top: 40px;
 }
 #team .card {
 	border-radius: 0;
@@ -466,11 +478,11 @@ body{
 
 .social-buttons-icon i {
     font-size: 36px;
-    color: #FF3F3F;
+    color: var(--theme-blue);
 }
 
 .social-buttons-icon i:hover{
-    color: #ffffff;
+    color: #015db4;
 }
 
 

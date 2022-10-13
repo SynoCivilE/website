@@ -72,6 +72,7 @@
     .navbar-container{
         display: block;
         position: relative;
+        align-items: center;
         height: 64px;
     }
 
@@ -145,7 +146,7 @@
 
     .nav-logo{
         position: absolute;
-        top: 10px;
+        top: 0px;
         right: 15px;        
     }
 
